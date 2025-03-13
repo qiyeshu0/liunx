@@ -120,21 +120,26 @@
 ### 下载脚本
 
 ```bash
-wget https://raw.githubusercontent.com/yourusername/linux-update-script/main/linux_system_tool.sh
+国外环境
+wget https://raw.githubusercontent.com/qiyeshu0/liunx/refs/heads/main/liunx.sh
 # 或者
-curl -O https://raw.githubusercontent.com/yourusername/linux-update-script/main/linux_system_tool.sh
+curl -O https://raw.githubusercontent.com/qiyeshu0/liunx/refs/heads/main/liunx.sh
+# 国内环境
+wget https://github.722331.xyz/https://raw.githubusercontent.com/qiyeshu0/liunx/refs/heads/main/liunx.sh
+# 或者
+curl -O https://github.722331.xyz/https://raw.githubusercontent.com/qiyeshu0/liunx/refs/heads/main/liunx.sh
 ```
 
 ### 添加执行权限
 
 ```bash
-chmod +x linux_system_tool.sh
+chmod +x liunx.sh
 ```
 
 ### 运行脚本
 
 ```bash
-sudo ./linux_system_tool.sh
+sudo ./liunx.sh
 ```
 
 脚本将显示交互式菜单，您可以选择：
@@ -151,22 +156,22 @@ sudo ./linux_system_tool.sh
 
 ```bash
 # 显示帮助信息
-sudo ./linux_system_tool.sh --help
+sudo ./liunx.sh --help
 
 # 仅创建快捷方式
-sudo ./linux_system_tool.sh --install
+sudo ./liunx.sh --install
 
 # 仅执行系统更新
-sudo ./linux_system_tool.sh --update
+sudo ./liunx.sh --update
 
 # 检查脚本更新
-sudo ./linux_system_tool.sh --check
+sudo ./liunx.sh --check
 
 # 显示版本信息
-sudo ./linux_system_tool.sh --version
+sudo ./liunx.sh --version
 
 # 安装青龙面板所需的依赖
-sudo ./linux_system_tool.sh --qinglong
+sudo ./liunx.sh --qinglong
 ```
 
 ### 使用快捷方式
@@ -228,7 +233,7 @@ scp linux_system_tool.sh username@server_ip:/path/to/destination/
 ```bash
 ssh username@server_ip
 cd /path/to/destination/
-sudo ./linux_system_tool.sh
+sudo ./liunx.sh
 ```
 
 3. 选择选项3创建快捷方式并更新系统，或者根据需要选择其他选项
